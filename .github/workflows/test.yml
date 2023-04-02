@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches: ["test"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Echo A
+        run: echo A
+
+      - name: Echo B
+        run: echo B
+    
+      - name: Echo C
+        run: echo C
